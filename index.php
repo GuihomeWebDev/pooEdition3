@@ -33,12 +33,12 @@ var_dump($merlin);
             <p><?= "vie de ".$leodagan->name." ".$leodagan->life; ?></p>
             <p><?=$leodagan->name." prend une potion de vie qui trainée dans sa poche" ?></p>
             <p><?= $leodagan->regenerated(); ?></p>
-            <p><?= "Leodagan récupère"." ".$leodagan->life." "."points de vie au total"; ?></p>
-              <p><?= "Leodagan cri.. "; ?></p>
+            <p><?= $leodagan->name." "."récupère"." ".$leodagan->life." "."points de vie au total"; ?></p>
+              <p><?= $leodagan->name." "."cri.. "; ?></p>
                 <p><?php $leodagan->yell(); ?></p>
-                <p><?= "Leodagan frappe Merlin avec son éppée "; ?></p>
+                <p><?= $leodagan->name." "."frappe Merlin avec son éppée "; ?></p>
                 <p><?php $leodagan->handOfGod($merlin); ?></p>
-                <p><?= "vie de merlin"." ".$merlin->life; ?></p>
+                <p><?= "vie de"." ".$merlin->name." ".$merlin->life; ?></p>
                 <p><?= $leodagan->name." "." range son éppée... Attrape"." ".$merlin->name." "."et lui colle une patate" ?></p>
                 <p><?php $leodagan->punch($merlin) ?></p>
                 <h3>Fin du combat (dans quel état sont nos personnages)</h3>
